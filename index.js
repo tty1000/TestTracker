@@ -29,15 +29,6 @@ models.sequelize.sync({ force: dbUpdate }).then(() => {
     name: 'Naman Shenoy',
     location: 'NR',
   })
-  models.SubFunction.create({
-    name: 'testSub1',
-  })
-  models.SubFunction.create({
-    name: 'testSub2',
-  })
-  models.Product.create({
-    name: 'testProduct1',
-  })
 
   console.log(dbUpdate ? Simulation() : false)
   // models.Project.create({
@@ -53,7 +44,6 @@ models.sequelize.sync({ force: dbUpdate }).then(() => {
   //   product_id: 1,
   //   user_id: '1',
   // })
-
 
   // pro1.setItems(test1)
   // test1.setEngineer(Tom)

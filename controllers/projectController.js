@@ -13,7 +13,7 @@ const ProjectController = {
             { model: models.Message, as: 'Messages' },
             { model: models.Product, as: 'Product' },
             { model: models.Stage, as: 'Stages' },
-            { model: models.SubFunction, as: 'SubFunctions' },
+            { model: models.Subfunction, as: 'Subfunctions' },
             { model: models.User, as: 'User' },
           ],
         },

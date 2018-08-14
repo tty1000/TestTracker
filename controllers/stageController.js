@@ -38,7 +38,12 @@ const StageController = {
         actualStart: req.body.actualStart,
         actualFinish: req.body.actualFinish,
       },
-      { where: { item_id: req.params.itemId } },
+      {
+        where: {
+          item_id: req.params.itemId,
+          stage: req.params.stageNumber,
+        },
+      },
     ).then(() => res.sendStatus(201))
       .catch((error) => {
         res.sendStatus(400)
@@ -47,7 +52,10 @@ const StageController = {
   },
   getItemStages: (req, res) => {
     const { itemId } = req.params
-    models.Stage.findAll({ where: { item_id: itemId } })
+    models.Stage.findAll({
+      where: { item_id: itemId },
+      order: 'stage',
+    })
       .then(stageList => res.send(stageList))
       .catch((error) => {
         res.sendStatus(400)

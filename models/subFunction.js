@@ -1,5 +1,5 @@
 export default (sequelize, DataTypes) => {
-  const SubFunction = sequelize.define('subFunction', {
+  const Subfunction = sequelize.define('subfunction', {
     name: {
       type: DataTypes.STRING,
       unique: true,
@@ -7,12 +7,12 @@ export default (sequelize, DataTypes) => {
     },
   }, { underscored: true })
 
-  SubFunction.associate = (models) => {
-    SubFunction.belongsToMany(models.Item, {
+  Subfunction.associate = (models) => {
+    Subfunction.belongsToMany(models.Item, {
       as: 'Items',
-      through: 'sub_function_item',
+      through: 'subfunction_item',
       targetKey: 'id',
     })
   }
-  return SubFunction
+  return Subfunction
 }

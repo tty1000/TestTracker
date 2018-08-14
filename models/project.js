@@ -6,35 +6,35 @@ export default (sequelize, DataTypes) => {
     },
     plannedStart: {
       type: DataTypes.DATEONLY,
-      field: 'planned_start',
+      field: 'plannedstart',
     },
     plannedFinish: {
       type: DataTypes.DATEONLY,
-      field: 'planned_finish',
+      field: 'plannedfinish',
     },
     actualStart: {
       type: DataTypes.DATEONLY,
-      field: 'actual_start',
+      field: 'actualstart',
     },
     actualFinish: {
       type: DataTypes.DATEONLY,
-      field: 'actual_finish',
+      field: 'actualfinish',
     },
     totalTests: {
       type: DataTypes.INTEGER,
-      field: 'total_tests',
+      field: 'totaltests',
     },
     passingTests: {
       type: DataTypes.INTEGER,
-      field: 'passing_tests',
+      field: 'passingtests',
     },
     failingTests: {
       type: DataTypes.INTEGER,
-      field: 'failing_tests',
+      field: 'failingtests',
     },
     completedTests: {
       type: DataTypes.INTEGER,
-      field: 'completed_tests',
+      field: 'completedtests',
     },
 
   }, { underscored: true })

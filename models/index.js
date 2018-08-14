@@ -1,6 +1,6 @@
-import Sequelize from 'sequelize';
+import Sequelize from 'sequelize'
 
-const sequelize = new Sequelize('mydb', 'postgres', 'pw', {
+const sequelize = new Sequelize('testtracker', 'postgres', 'pw', {
   dialect: 'postgres',
   logging: false,
   define: { underscored: true },
@@ -12,7 +12,7 @@ const models = {
   Project: sequelize.import('./project'),
   Item: sequelize.import('./item'),
   Stage: sequelize.import('./stage'),
-  SubFunction: sequelize.import('./subFunction'),
+  Subfunction: sequelize.import('./subfunction'),
   Product: sequelize.import('./product'),
   Message: sequelize.import('./message'),
 };

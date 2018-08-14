@@ -8,19 +8,19 @@ export default (sequelize, DataTypes) => {
     },
     plannedStart: {
       type: DataTypes.DATEONLY,
-      field: 'planned_start',
+      field: 'plannedstart',
     },
     plannedFinish: {
       type: DataTypes.DATEONLY,
-      field: 'planned_finish',
+      field: 'plannedfinish',
     },
     actualStart: {
       type: DataTypes.DATEONLY,
-      field: 'actual_start',
+      field: 'actualstart',
     },
     actualFinish: {
       type: DataTypes.DATEONLY,
-      field: 'actual_finish',
+      field: 'actualfinish',
     },
   }, { underscored: true })
 
