@@ -1,8 +1,8 @@
-###Thomas Yang		
-###8/13/18
-##Teradyne: Test Tracker – Backend Configuration
+### Thomas Yang		
+### 8/13/18
+## Teradyne: Test Tracker – Backend Configuration
 ----------------------------------------
-##The backend is setup to currently use:
+## The backend is setup to currently use:
 1.		Node.js
 2.		Express js
 3.		Sequelize
@@ -117,7 +117,7 @@
 }
 ```
 ---------------------------------------------------
-##Further Implementation Needed 
+## Further Implementation Needed 
 1. **Create Messages**
 	- Create MESSAGE after there has been a change in ITEM and report it to the USER
 2. **Communication with MS Project or Primavera**
