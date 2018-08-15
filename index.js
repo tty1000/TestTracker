@@ -1,6 +1,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
+import fileUpload from 'express-fileupload'
 import models from './models'
 import Simulation from './simulation'
 import router from './routes'
@@ -9,8 +10,12 @@ const app = express()
 const dbUpdate = true
 
 app.use(cors())
+
+app.use(fileUpload())
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
 app.get('/', (req, res) => {
   res.send('hello there, general kenobi')
 })

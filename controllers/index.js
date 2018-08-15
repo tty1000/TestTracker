@@ -5,6 +5,7 @@ import ProductController from './productController'
 import StageController from './stageController'
 import SubfunctionController from './subfunctionController'
 import MessageController from './messageController'
+import FileController from './fileController'
 
 const Controllers = {
   UserController,
@@ -14,6 +15,7 @@ const Controllers = {
   StageController,
   SubfunctionController,
   MessageController,
+  FileController,
 }
 
 export default Controllers

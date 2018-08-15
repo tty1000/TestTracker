@@ -1,0 +1,84 @@
+WBS,Unique_ID,Name,Task_Summary_Name,Duration,Actual_Start,Actual_Finish,Resource_Names,Baseline_Start,Baseline_Finish,Actual_Duration,Actual_Work,ID,Unique_ID_Predecessors,Unique_ID_Successors,Milestone
+1,417,Inputs,,0 days,NA,NA,,NA,NA,0 days,0 hrs,1,,,Yes
+1.1,347,INPUT: Project Start,Inputs,0 days,NA,NA,,NA,NA,0 days,0 hrs,2,,350,Yes
+1.2,418,HW available,Inputs,0 days,NA,NA,,NA,NA,0 days,0 hrs,3,,"392,393",Yes
+1.3,419,SW Drivers available,Inputs,0 days,NA,NA,,NA,NA,0 days,0 hrs,4,,"392,393",Yes
+1.4,420,DIB Fixture available,Inputs,0 days,NA,NA,,NA,NA,0 days,0 hrs,5,,"392,393",Yes
+2,225,Milestones,,21 days,NA,NA,,NA,NA,0 days,0 hrs,6,,,No
+2.1,230,Design Complete,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,7,370,,Yes
+2.2,226,Archtecture Coded,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,8,374,,Yes
+2.3,241,Coding Complete,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,9,378,,Yes
+2.4,227,Tests Functional,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,10,394,,Yes
+2.5,228,Verification Complete (PMT),Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,11,398,,Yes
+2.6,231,Alpha Complete,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,12,404,,Yes
+2.7,232,Beta Complete,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,13,413,,Yes
+2.8,229,Final Release,Milestones,0 days,NA,NA,,NA,NA,0 days,0 hrs,14,414,,Yes
+3,348,Phase 2: Planning,,9 days,NA,NA,,NA,NA,0 days,0 hrs,15,,,No
+3.1,349,SRS or Test Concept,Phase 2: Planning,3 days,NA,NA,,NA,NA,0 days,0 hrs,16,,,No
+3.1.1,350,SRS/TC document creation,SRS or Test Concept,1 day,NA,NA,,NA,NA,0 days,0 hrs,17,347,351,No
+3.1.2,351,SRS/TC document review,SRS or Test Concept,1 day,NA,NA,,NA,NA,0 days,0 hrs,18,350,352,No
+3.1.3,352,SRS/TC Revise based on feedback & final approval,SRS or Test Concept,1 day,NA,NA,,NA,NA,0 days,0 hrs,19,351,"354,367",No
+3.2,353,Schedule,Phase 2: Planning,3 days,NA,NA,,NA,NA,0 days,0 hrs,20,,,No
+3.2.1,354,Schedule Creation,Schedule,1 day,NA,NA,,NA,NA,0 days,0 hrs,21,352,355,No
+3.2.2,355,Schedule Review,Schedule,1 day,NA,NA,,NA,NA,0 days,0 hrs,22,354,356,No
+3.2.3,356,Revise based on feedback,Schedule,1 day,NA,NA,,NA,NA,0 days,0 hrs,23,355,358,No
+3.3,357,Risks,Phase 2: Planning,3 days,NA,NA,,NA,NA,0 days,0 hrs,24,,,No
+3.3.1,358,Create risk table,Risks,1 day,NA,NA,,NA,NA,0 days,0 hrs,25,356,359,No
+3.3.2,359,Investigate high risk area 1,Risks,1 day,NA,NA,,NA,NA,0 days,0 hrs,26,358,360,No
+3.3.3,360,Investigate high risk area 2,Risks,1 day,NA,NA,,NA,NA,0 days,0 hrs,27,359,363,No
+4,361,Phase 3: Development,,16 days,NA,NA,,NA,NA,0 days,0 hrs,28,,,No
+4.1,362,Material Procurement,Phase 3: Development,3 days,NA,NA,,NA,NA,0 days,0 hrs,29,,,No
+4.1.1,363,Define verification material required,Material Procurement,1 day,NA,NA,,NA,NA,0 days,0 hrs,30,360,364,No
+4.1.2,364,Place Order,Material Procurement,1 day,NA,NA,,NA,NA,0 days,0 hrs,31,363,365,No
+4.1.3,365,Leadtime for material,Material Procurement,1 day,NA,NA,,NA,NA,0 days,0 hrs,32,364,,No
+4.2,366,UIS <SW project only>,Phase 3: Development,3 days,NA,NA,,NA,NA,0 days,0 hrs,33,,,No
+4.2.1,367,UIS document creation,UIS <SW project only>,1 day,NA,NA,,NA,NA,0 days,0 hrs,34,352,368,No
+4.2.2,368,UIS document review,UIS <SW project only>,1 day,NA,NA,,NA,NA,0 days,0 hrs,35,367,369,No
+4.2.3,369,UIS Revise based on feedback & final approval,UIS <SW project only>,1 day,NA,NA,,NA,NA,0 days,0 hrs,36,368,371,No
+4.3,370,Design Doc or Test Strategy,Phase 3: Development,3 days,NA,NA,,NA,NA,0 days,0 hrs,37,,230,No
+4.3.1,371,DD/TS document creation ,Design Doc or Test Strategy,1 day,NA,NA,"David M,Ford",NA,NA,0 days,0 hrs,38,369,372,No
+4.3.2,372,DD/TS document review ,Design Doc or Test Strategy,1 day,NA,NA,,NA,NA,0 days,0 hrs,39,371,373,No
+4.3.3,373,DD/TS Revise based on feedback & final approval,Design Doc or Test Strategy,1 day,NA,NA,,NA,NA,0 days,0 hrs,40,372,375,No
+4.4,374,SW Archtecture Coding <If Needed>,Phase 3: Development,3 days,NA,NA,,NA,NA,0 days,0 hrs,41,,226,No
+4.4.1,375,<Feature 1>,SW Archtecture Coding <If Needed>,1 day,NA,NA,,NA,NA,0 days,0 hrs,42,373,376,No
+4.4.2,376,<Feature 2>,SW Archtecture Coding <If Needed>,1 day,NA,NA,,NA,NA,0 days,0 hrs,43,375,377,No
+4.4.3,377,<Feature 3>,SW Archtecture Coding <If Needed>,1 day,NA,NA,,NA,NA,0 days,0 hrs,44,376,"380,384,388",No
+4.5,378,Test Implementation,Phase 3: Development,3 days,NA,NA,,NA,NA,0 days,0 hrs,45,,"241,392",No
+4.5.1,379,<Test Group #1>,Test Implementation,3 days,NA,NA,,NA,NA,0 days,0 hrs,46,,,No
+4.5.1.1,380,Write Code,<Test Group #1>,1 day,NA,NA,,NA,NA,0 days,0 hrs,47,377,381,No
+4.5.1.2,381,Compile,<Test Group #1>,1 day,NA,NA,,NA,NA,0 days,0 hrs,48,380,382,No
+4.5.1.3,382,Offline Debug,<Test Group #1>,1 day,NA,NA,,NA,NA,0 days,0 hrs,49,381,,No
+4.5.2,383,<Test Group #2>,Test Implementation,3 days,NA,NA,,NA,NA,0 days,0 hrs,50,,,No
+4.5.2.1,384,Write Code,<Test Group #2>,1 day,NA,NA,,NA,NA,0 days,0 hrs,51,377,385,No
+4.5.2.2,385,Compile,<Test Group #2>,1 day,NA,NA,,NA,NA,0 days,0 hrs,52,384,386,No
+4.5.2.3,386,Offline Debug,<Test Group #2>,1 day,NA,NA,,NA,NA,0 days,0 hrs,53,385,,No
+4.5.3,387,<Test Group #3>,Test Implementation,3 days,NA,NA,,NA,NA,0 days,0 hrs,54,,,No
+4.5.3.1,388,Write Code,<Test Group #3>,1 day,NA,NA,,NA,NA,0 days,0 hrs,55,377,389,No
+4.5.3.2,389,Compile,<Test Group #3>,1 day,NA,NA,,NA,NA,0 days,0 hrs,56,388,390,No
+4.5.3.3,390,Offline Debug,<Test Group #3>,1 day,NA,NA,,NA,NA,0 days,0 hrs,57,389,,No
+4.6,391,Verification Plan,Phase 3: Development,2 days,NA,NA,,NA,NA,0 days,0 hrs,58,,,No
+4.6.1,392,Verification plan creation,Verification Plan,1 day,NA,NA,,NA,NA,0 days,0 hrs,59,"378,418,419,420",393,No
+4.6.2,393,Verification plan revise based on feedback & final approval,Verification Plan,1 day,NA,NA,,NA,NA,0 days,0 hrs,60,"392,418,419,420",395,No
+4.7,394,Functional Verification (Ready For Use By Others),Phase 3: Development,2 days,NA,NA,,NA,NA,0 days,0 hrs,61,,227,No
+4.7.1,395,Offline Verification execution,Functional Verification (Ready For Use By Others),1 day,NA,NA,,NA,NA,0 days,0 hrs,62,393,396,No
+4.7.2,396,Partial Online Verification execution,Functional Verification (Ready For Use By Others),1 day,NA,NA,,NA,NA,0 days,0 hrs,63,395,399,No
+5,397,Phase 4 Verification,,13 days?,NA,NA,,NA,NA,0 days,0 hrs,64,,,No
+5.1,398,Test Validation,Phase 4 Verification,7 days,NA,NA,,NA,NA,0 days,0 hrs,65,,228,No
+5.1.1,399,Full Online Verification Execution,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,66,396,400,No
+5.1.2,400,Bug Fix,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,67,399,401,No
+5.1.3,401,Data collection & Analysis,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,68,400,402,No
+5.1.4,402,Independent Verification (Alpha) <If Needed>,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,69,401,403,No
+5.1.5,403,Bug Fix (Alpha),Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,70,402,404,No
+5.1.6,404,Results review,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,71,403,"231,405",No
+5.1.7,405,Revise with additional data based on feedback & final approval,Test Validation,1 day,NA,NA,,NA,NA,0 days,0 hrs,72,404,"407,411",No
+5.2,406,Transfer,Phase 4 Verification,3 days,NA,NA,,NA,NA,0 days,0 hrs,73,,,No
+5.2.1,407,Devvelop Training Material,Transfer,1 day,NA,NA,,NA,NA,0 days,0 hrs,74,405,408,No
+5.2.2,408,Hold Transfer Meeting,Transfer,1 day,NA,NA,,NA,NA,0 days,0 hrs,75,407,409,No
+5.2.3,409,Signoff on Transfer Criteria,Transfer,1 day,NA,NA,,NA,NA,0 days,0 hrs,76,408,,No
+5.3,410,Release,Phase 4 Verification,4 days,NA,NA,,NA,NA,0 days,0 hrs,77,,,No
+5.3.1,411,Beta Test (Cutsomer verification) <If Needed>,Release,1 day,NA,NA,,NA,NA,0 days,0 hrs,78,405,412,No
+5.3.2,412,Bug fix (Beta),Release,1 day,NA,NA,,NA,NA,0 days,0 hrs,79,411,413,No
+5.3.3,413,Final review,Release,1 day,NA,NA,,NA,NA,0 days,0 hrs,80,412,"232,414",No
+5.3.4,414,Post Kit and Archive Project Docs,Release,1 day,NA,NA,,NA,NA,0 days,0 hrs,81,413,"229,415",No
+5.4,415,Buffer,Phase 4 Verification,1 day,NA,NA,,NA,NA,0 days,0 hrs,82,414,416,No
+5.5,416,Project Complete,Phase 4 Verification,1 day?,NA,NA,,NA,NA,0 days,0 hrs,83,415,,No

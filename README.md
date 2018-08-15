@@ -4,9 +4,14 @@
 ----------------------------------------
 ## The backend is setup to currently use:
 1.		Node.js
+    - Used for Javascript application
 2.		Express js
+    - Node framework used to set up server
 3.		Sequelize
+    - Js Library used to talk to database
 4.		PostgreSQL
+    - Database used
+
 - The first requirements are to install Node.js and PostgreSQL on the host computer.
 - Copy the folders: controllers, models, and routes into a directory
 - Copy the files: index.js, package.json, README, 
@@ -19,9 +24,11 @@
  **$ npm start**
 - This runs a script to start the server
 
-**Controllers**: The controllers contain the get + post requests that are used to get information from the database, add information, and update it. Each database model has a controller.
-**Models**: The models are the database models. Each model defines what information is held in the database (definition), and the relations between items (association)
 **Routes**: The routes/index file has the information of the route needed to execute a specific get/post request. This file has the necessary information needed to know the link between the route and the controller. 
+
+**Controllers**: The controllers contain the get + post requests that are used to get information from the database, add information, and update it. Each database model has a controller.
+
+**Models**: The models are the database models. Each model defines what information is held in the database (definition), and the relations between items (association)
 
 **Model Detail:**
 	- Each PROJECT has a USER (project owner) and ITEMS (Tests and Fixtures)
@@ -116,6 +123,40 @@
     item_id: int
 }
 ```
+
+**Routes List:** 
+    If there is a colon, the variable after will be used to find the route
+
+- GET /project/all - List of Projects, no associations
+- GET /project/:projectId - One Project, no associations
+- GET /project/:projectId/detail -  One Project, associations
+- POST /project - Create new Project
+- GET /project/:projectId/item/count - Get a count of items in project
+- GET /project/:projectId/item/allitems - List of all items in project
+- GET /project/:projectId/item/limit/:limit/offset/:offset - Specified list of items with size limit and offset
+- GET /project/:projectId/item/:itemId - One Item, associations
+- POST /project/:projectId/item - Add new item
+- POST /project/:projectId/item/:itemId - UPDATE specified item 
+- POST /item/:itemId - UPDATE specified item 
+- GET /project/:projectId/user/:userId/ungated - List of user's ungated tests
+- GET /project/:projectId/user/:userId/gated - List of user's gated tests
+- GET /project/:projectId/user/:userId/tests - List of all user's tests
+- GET /user/:userId/messages -List of user's messages
+- GET /product/:productId - One Product
+- GET /product/all - List of all products
+- POST /product - Add new product
+- GET /stage/:stageId - One stage
+- GET /subfunction/:subfunctionId - One subfunction
+- GET /subfunction/all - List of all subfunctions
+- POST /subfunction - Add new subfunction
+- GET /message/:messageId - One message
+- POST /item/:itemId/message - Add new message
+- POST /sub/:subId/item/:itemId - Associate a subfunction with an item
+- GET /item/:itemId/subfunctions - List of item's subfunctions
+
+- GET *unfinished* - Import csv
+- POST *unfinished* - Export csv
+
 ---------------------------------------------------
 ## Further Implementation Needed 
 1. **Create Messages**

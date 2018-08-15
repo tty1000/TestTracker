@@ -11,7 +11,7 @@ const router = (app) => {
   app.get('/project/:projectId/item/allitems', Controllers.ItemController.getItemsInProject) // get all items in project
   app.get('/project/:projectId/item/limit/:limit/offset/:offset', Controllers.ItemController.getItemsInProjectLimitOffset) // get -limit- items in project starting at -offset-
   app.get('/project/:projectId/item/:itemId', Controllers.ItemController.getController) // get specific item in project
-  app.post('/project/:projectId/item/', Controllers.ItemController.createController) // post to create item in a project
+  app.post('/project/:projectId/item', Controllers.ItemController.createController) // post to create item in a project
   app.post('/project/:projectId/item/:itemId', Controllers.ItemController.updateController) // update an item
   app.post('/item/:itemId', Controllers.ItemController.updateController) // update an item
 
@@ -48,7 +48,9 @@ const router = (app) => {
 
   app.post('/sub/:subId/item/:itemId', Controllers.SubfunctionController.postAssociationController) // associate a subfunction with an item
   app.get('/item/:itemId/subfunctions', Controllers.SubfunctionController.getAllSubfunctionsPerItem) // find the subfunctions associated with an item
-// end routes
+
+  app.post('/import/:projectId', Controllers.FileController.postImportCSV)
+  // end routes
 }
 
 export default router
