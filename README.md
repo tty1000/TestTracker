@@ -4,13 +4,13 @@
 ----------------------------------------
 ## The backend is setup to currently use:
 1.		Node.js
-    - Used for Javascript application
+    - Used for Server Side Javascript
 2.		Express js
     - Node framework used to set up server
 3.		Sequelize
-    - Js Library used to talk to database
+    - Js Library used to talk to database (ORM: Object Relational Mapping)
 4.		PostgreSQL
-    - Database used
+    - Relational Database used
 
 - The first requirements are to install Node.js and PostgreSQL on the host computer.
 - Copy the folders: controllers, models, and routes into a directory
